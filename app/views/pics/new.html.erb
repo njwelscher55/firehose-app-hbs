@@ -1,9 +1,13 @@
 <div class="smurfy">
 
 <%= simple_form_for @pic do |f| %>
-<%= f.input :title %>
+<%= f.input :title, lable: 'What is this pic about?', placeholder: 'Red Carnation' %>
 <%= f.input :subtitle %>
 <%= f.input :message %>
+
+
+
+<%= f.input :image, label: 'Upload your image' %>
 
 <%= f.submit "Save" %>
 <% end %>
